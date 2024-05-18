@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body data-bs-theme="dark">
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-12">
+        <label for=" productName">productName</label>
+        <input type="text " class=' mb-4 form-control  ' placeholder=" name" id="productName">
+      </div>
+      <div class="col-12">
+        <label for=" productPrice">productPrice</label>
+        <input type="text " class=' mb-4 form-control' placeholder=" name" id="productPrice">
+      </div>
+      <div class="col-12">
+        <label for=" productCategory">productCategory</label>
+        <input type="text " class=' mb-4 form-control' placeholder=" name" id="productCategory">
+      </div>
+      <div class="col-12">
+        <label for=" productDesc">productDesc</label>
+        <textarea class="form-control mb-4 " type="text" name="productDesc" id="productDesc"></textarea>
+
+      </div>
+    </div>
+    <button class="btn btn-outline-info" onclick="addProduct()"> Add Product</button>
+    <div id="">
+      <table class="table">
+        <thead>
+          <th>index</th>
+          <th>productName</th>
+          <th>ProductPrice</th>
+          <th>productCategory</th>
+          <th>ProductDescr.</th>
+          <th>Update.</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="rowData">
+
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
